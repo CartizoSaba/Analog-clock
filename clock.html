@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Analog Clock</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=poiret+One">  
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+           <style type="text/css">
+            .clock{
+                background: #777;
+                width: 300px;
+                height: 300px;
+                margin: 8% auto 0;
+                border-radius: 50%;
+                border: 14px solid #333;
+                position: relative;
+                box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+
+            }
+            .dot {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background: #ccc;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                position: absolute;
+                z-index: 10;
+                box-shadow: 0 2px 4px -1px black;
+            }
+            .hour-hand{
+                position: absolute;
+                z-index: 5;
+                width: 4px;
+                height: 65px;
+                background: blue;
+                top: 79px;
+                transform-origin: 50% 72px;
+                left: 50%;
+                margin-left: -2px;
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+            }
+            .minute-hand{
+                position: absolute;
+                z-index: 6;
+                width: 4px;
+                height: 100px;
+                background-color: #000;
+                top: 46px;
+                left: 50%;
+                margin-left: -2px;
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+                transform-origin: 50% 105px;
+
+
+
+            }
+           </style>
+
+    </head>
+    <body>
+        <div class="Clock">
+            <div>
+                <div class="date"></div>
+                <div class="day"></div>
+            </div>
+            <div class="dot"></div>
+            <div>
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div> 
+            </div>
+            <div>
+                <span class="h3">3</span>
+                <span class="h6">6</span>
+                <span class="h9">9</span>
+                <span class="h12">12</span>
+            </div>
+            <div class="diallines"></div>
+        </div>        
+    </body>
+
+
+
+</html>
