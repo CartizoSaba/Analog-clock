@@ -167,6 +167,7 @@
             <div>
                 <div class="date"></div>
                 <div class="day"></div>
+                 
             </div>
             <div class="dot"></div>
             <div>
@@ -198,6 +199,7 @@
                 m = d.getMinutes(),
                 s = d.getSeconds(),
                 date = d.getDate(),
+                day = d.getDay(),
                 month = d.getMonth() + 1,
                 year = d.getYear(),
 
@@ -212,12 +214,12 @@
                 dayE1 = document.querySelector('.day');
 
                 weekday[0] = "Sunday";
-                weekday[0] = "Monday";
-                weekday[0] = "Tuesday";
-                weekday[0] = "Wednesday";
-                weekday[0] = "Thursday";
-                weekday[0] = "Friday";
-                weekday[0] = "Saturday"
+                weekday[1] = "Monday";
+                weekday[2] = "Tuesday";
+                weekday[3] = "Wednesday";
+                weekday[4] = "Thursday";
+                weekday[5] = "Friday";
+                weekday[6] = "Saturday"
 
                 var day = weekday[d.getDay()];
                 
